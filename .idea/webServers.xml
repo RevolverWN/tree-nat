@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="6702e572-9682-480f-9284-48824c63d3c8" name="tree-nat">
+        <fileTransfer rootFolder="/data/lidongxing/wangning/tree-NAT" accessType="SFTP" host="59.64.59.31" port="22" sshConfigId="6a9d071d-a3f6-4478-82c0-c789fd50a438" sshConfig="lidongxing@59.64.59.31:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
