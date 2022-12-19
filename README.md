@@ -1,5 +1,5 @@
 # tree-nat
-The idea of this project is that the time complexity of a balanced binary tree is O(〖log〗_2 N), 
+The idea of this project is that the time complexity of a balanced binary tree is O(log2 N), 
 so that the target sentence can be generated in a tree structure, which can effectively improve the decoding speed. 
 In the tree structure generation process, the generation of target tokens at each level can use the previously generated tokens as a reference, 
 thus effectively improving the correlation between each target token.
