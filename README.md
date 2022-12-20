@@ -1,4 +1,4 @@
-# tree-nat
+# Tree-nat
 The idea of this project is that the time complexity of a balanced binary tree is O(log2 N), 
 so that the target sentence can be generated in a tree structure, which can effectively improve the decoding speed. 
 In the tree structure generation process, the generation of target tokens at each level can use the previously generated tokens as a reference, 
@@ -12,3 +12,8 @@ and the tokens in the lower level are considered to have not been generated, so 
 Finally, the binary tree is converted into sequences by levels for training. In the prediction stage, 
 each level of the tree structure is auto-regressively generated from the root node of the <BOS> token until the predicted number of levels is reached 
 or a certain level of <EOS> token is generated, and then restored to the sequence target sentence.
+
+# Problem
+1 Although the time complexity of binary tree generation is O(log_2 N), it takes several passes to generate a complete sentence, which still cannot be compared with the one-pass decoding speed of NAT.
+
+2 At present, there have been articles on binary tree generation (Non-Autoregressive Machine Translation with Latent Alignments). Although the implementation method is not exactly the same, it makes the method lose its innovation.
